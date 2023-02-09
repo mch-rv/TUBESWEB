@@ -1,0 +1,20 @@
+[05-Jan-2023 10:27:35 UTC] PHP Fatal error:  Uncaught TypeError: CodeIgniter\HTTP\URI::setScheme(): Argument #1 ($str) must be of type string, null given, called in /home/proc7176/ci4/vendor/codeigniter4/framework/system/HTTP/IncomingRequest.php on line 403 and defined in /home/proc7176/ci4/vendor/codeigniter4/framework/system/HTTP/URI.php:662
+Stack trace:
+#0 /home/proc7176/ci4/vendor/codeigniter4/framework/system/HTTP/IncomingRequest.php(403): CodeIgniter\HTTP\URI->setScheme(NULL)
+#1 /home/proc7176/ci4/vendor/codeigniter4/framework/system/HTTP/IncomingRequest.php(202): CodeIgniter\HTTP\IncomingRequest->setPath('/', Object(Config\App))
+#2 /home/proc7176/ci4/vendor/codeigniter4/framework/system/HTTP/IncomingRequest.php(170): CodeIgniter\HTTP\IncomingRequest->detectURI('REQUEST_URI', 'projekkelompok2...')
+#3 /home/proc7176/ci4/vendor/codeigniter4/framework/system/Config/Services.php(541): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\URI), '', Object(CodeIgniter\HTTP\UserAgent))
+#4 /home/proc7176/ci4/vendor/codeigniter4/framework/system/Config/Services.php(497): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#5 /home/proc7176/ci4/vendor/codeigniter4/framework/system/Config/BaseService.php(253): CodeIgniter\Config\Services::request(NULL, false)
+#6 /home/proc7176/ci4/vendor/codeigniter4/framework/system/Config/BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#7 /home/proc7176/ci4/vendor/codeigniter4/framework/system/Config/Services.php(493): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#8 /home/proc7176/ci4/vendor/codeigniter4/framework/system/Config/BaseService.php(253): CodeIgniter\Config\Services::request()
+#9 /home/proc7176/ci4/vendor/codeigniter4/framework/system/Config/Services.php(263): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#10 /home/proc7176/ci4/vendor/codeigniter4/framework/system/Config/BaseService.php(253): CodeIgniter\Config\Services::exceptions(Object(Config\Exceptions), NULL, NULL, false)
+#11 /home/proc7176/ci4/vendor/codeigniter4/framework/system/Config/BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('exceptions', Array)
+#12 /home/proc7176/ci4/vendor/codeigniter4/framework/system/Config/Services.php(259): CodeIgniter\Config\BaseService::getSharedInstance('exceptions', NULL, NULL, NULL)
+#13 /home/proc7176/ci4/vendor/codeigniter4/framework/system/Config/BaseService.php(253): CodeIgniter\Config\Services::exceptions()
+#14 /home/proc7176/ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(178): CodeIgniter\Config\BaseService::__callStatic('exceptions', Array)
+#15 /home/proc7176/public_html/index.php(55): CodeIgniter\CodeIgniter->initialize()
+#16 {main}
+  thrown in /home/proc7176/ci4/vendor/codeigniter4/framework/system/HTTP/URI.php on line 662

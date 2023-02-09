@@ -1,0 +1,16 @@
+main > .container {
+    padding: 60px 15px 0;
+}
+
+.footer {
+    background-color: #fdfdfd;
+}
+
+.footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+code {
+    font-size: 100%;
+}
